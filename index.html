@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 날씨 웹사이트 ☀️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>날씨 예보</h1>
+    </header>
+    
+    <main class="weather-app">
+        <section class="search-area">
+            <input type="text" id="cityInput" placeholder="도시 이름을 입력하세요">
+            <button id="searchBtn">검색</button>
+        </section>
+
+        <section class="current-weather">
+            <h2 id="cityName">도시 이름</h2>
+            <p id="currentTemp">--°C</p>
+            <p id="weatherDesc">날씨 상태</p>
+            <button id="toggleUnitBtn">°F 전환</button>
+        </section>
+        
+        <section class="forecast-cards">
+            <h3>단기 예보</h3>
+            <div id="forecastContainer">
+                </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

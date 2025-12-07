@@ -1,0 +1,57 @@
+/* Mobile First: 모든 요소에 기본적으로 적용되는 스타일 */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f4f8; /* 배경 색상 */
+    text-align: center;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+/* 검색 영역 스타일 */
+.search-area input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+}
+
+.search-area button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 현재 날씨 및 예보 영역 스타일 */
+.current-weather {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#currentTemp {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* 단기 예보 카드 레이아웃 */
+#forecastContainer {
+    display: flex;
+    flex-direction: column; /* 모바일: 세로로 나열 */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* 768px 이상 (태블릿/PC)에서 가로 나열로 변경 (반응형 예시) */
+@media (min-width: 768px) {
+    #forecastContainer {
+        flex-direction: row; /* PC: 가로로 나열 */
+        justify-content: center;
+    }
+}
